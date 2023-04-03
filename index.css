@@ -29,3 +29,12 @@
     border-radius:12px;
     
 }
+h1{
+    display:flex;
+    justify-content:center;
+    text-decoration: underline;
+    font-style: oblique;
+}
+i{
+    margin:2px;
+}
