@@ -4,7 +4,9 @@ var box = document.createElement('div');
 box.className = 'box';
 var content = document.createElement('div');
 content.className = 'content';
-content.innerHTML="Hi"
+content.innerHTML=advice();
+var h1=document.createElement('h1');
+h1.innerHTML="Advice Chart"
 var button=document.createElement('button');
 button.classList.add("button","btn","btn-primary");
 var i=document.createElement('i');
@@ -13,7 +15,7 @@ button.appendChild(i);
 button.innerHTML+=" Refresh";
 button.addEventListener("click",advice)
 box.append(button,content);
-container.appendChild(box);
+container.append(h1,box);
 document.body.appendChild(container);
 
 async function advice() {
